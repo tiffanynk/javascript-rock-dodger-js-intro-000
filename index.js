@@ -39,7 +39,7 @@ function createRock(x) {
   GAME.appendChild(rock);
 
   function moveRock() {
-    rock.style.top = `${top + 2}px`
+    rock.style.top = `${top += 2}px`
 
      if (checkCollision(rock)) {
        return endGame()
@@ -61,7 +61,7 @@ window.requestAnimationFrame(moveRock)
 
 function endGame() {
   clearInterval(gameInterval)
-  ROCKS.forEach(function(rock) { rock.remove() })
+  ROCKS.forEach(function(rock) {rock.remove()})
 
   window.removeEventListener('keydown', moveDodger)
 
