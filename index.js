@@ -87,7 +87,7 @@ function endGame() {
 function moveDodger(e) {
     const keyCode = e.which
 
-    if ([LEFT_ARROW, RIGHT_ARROW].indexOf(code) > -1) {
+    if ([LEFT_ARROW, RIGHT_ARROW].indexOf(keyCode) > -1) {
       e.preventDefault()
       e.stopPropagation()
     }
