@@ -56,16 +56,8 @@ function createRock(x) {
 
   rock.style.top = top
 
-  /**
-   * Now that we have a rock, we'll need to append
-   * it to GAME and move it downwards.
-   */
    GAME.appendChild(rock);
 
-  /**
-   * This function moves the rock. (2 pixels at a time
-   * seems like a good pace.)
-   */
   function moveRock() {
     top = `${top + 2}px`
     /**
