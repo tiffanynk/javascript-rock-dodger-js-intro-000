@@ -91,7 +91,7 @@ function moveDodger(e) {
       e.preventDefault()
       e.stopPropagation()
     }
-    
+
     if(keyCode === LEFT_ARROW) {
       moveDodgerLeft()
     } else if (keyCode === RIGHT_ARROW) {
