@@ -18,13 +18,10 @@ function checkCollision(rock) {
     const rockLeftEdge = positionToInteger(rock.style.left)
     const rockRightEdge = rockLeftEdge + 20;
 
-    let a = dodgerLeftEdge;
-    let d = dodgerRightEdge;
-    let z = rockLeftEdge;
-    let c = rockRightEdge;
-
     return (
-      (z <= a && c >= a) || (z >= a && c <= d) || (z <= d && c >= d)
+      (rockLeftEdge <= dodgerLeftEdge && rockRightEdge >= dodgerLeftEdge) ||
+      (rockLeftEdge >= dodgerLeftEdge && rockRightEdge <= dodgerRightEdge) ||
+      (rockLeftEdge <= dodgerRightEdge && rockRightEdge >= dodgerRightEdge)
     )
   }
 }
