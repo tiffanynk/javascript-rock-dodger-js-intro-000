@@ -107,8 +107,8 @@ function moveDodgerLeft() {
     if (left > 0) {
       DODGER.style.left = `${left - 4}px`
     }
-  });
-}
+  })
+};
 
 function moveDodgerRight() {
   window.requestAnimationFrame(function () {
@@ -117,8 +117,8 @@ function moveDodgerRight() {
     if (left < 360) {
       DODGER.style.left = `${left + 4}px`
     }
-  });
-}
+  })
+};
 
 /**
  * @param {string} p The position property
