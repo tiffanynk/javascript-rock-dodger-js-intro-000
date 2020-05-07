@@ -40,8 +40,8 @@ function checkCollision(rock) {
     let c = rockRightEdge;
 
     return (
-      (z <= a && c >= a) || (z >= a && c <= d) || (z <= d && c >= d) 
-    ) 
+      (z <= a && c >= a) || (z >= a && c <= d) || (z <= d && c >= d)
+    )
   }
 }
 
