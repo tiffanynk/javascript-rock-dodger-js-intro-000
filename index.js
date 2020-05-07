@@ -40,7 +40,7 @@ function checkCollision(rock) {
     let d = dodgerRightEdge;
     let z = rockLeftEdge;
     let c = rockRightEdge;
-    
+
     if ((z < a && c > a || z > a && c < d || z < d && c > d) /**
                * Think about it -- what's happening here?
                * There's been a collision if one of three things is true:
